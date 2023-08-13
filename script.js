@@ -28,11 +28,11 @@ continentSelect.addEventListener("change", () => {
       datas.map((data) => {
         if (data.continents == continentSelect.value) {
           let output = "";
-          output += `
+          output +=`
           <div>
-            <img src=${data.flags.png} class="h-84 w-full" />
-            <h1 class="text-xl bg-blue-700 py-2 px-8 rounded-sm mt-4">Country: ${data.name.common}</h1>
-            <p class="text-xl bg-blue-500 py-2 px-8 rounded-sm mb-4">Population: ${data.population}</p>
+            <img src=${data.flags.png} class="h-84 w-full"/>
+            <h1 class="text-xl bg-blue-700 py-2 px-8 rounded-sm mt-4 text-white">Country: ${data.name.common}</h1>
+            <p class="text-xl bg-blue-500 py-2 px-8 rounded-sm mb-4 text-white">Population: ${data.population}</p>
           </div>
           `;
           document.getElementById('countryProfile').classList.add('hidden');
